@@ -2,7 +2,11 @@
 
 ## Configuração
 
-Clone ou baixe o repositório
+1. Clone ou baixe o repositório
+2. Obter token do bot com o @BotFather e criar variável de ambiente:
+```
+export BOT_TOKEN="token"
+```
 
 ## Comandos
 
