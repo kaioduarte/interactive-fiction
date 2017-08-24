@@ -9,6 +9,7 @@ class Game {
 	var scenes: [Scene] = []
 	var current_scene: Scene?
 
+
 	init(){
 		self.file = FileHandle(forReadingAtPath: "/home/kds/bot/Sources/scene.json")
 		self.data = self.file!.readDataToEndOfFile()
@@ -16,6 +17,12 @@ class Game {
 		self.scenes = getScenes()
 		self.current_scene = self.scenes[0]
 	}
+
+
+	func restart() {
+		self.current_scene = self.scenes[0]
+	}
+
 
 	func getScenes() -> [Scene] {
 	    var scenes: [Scene] = []
@@ -40,6 +47,7 @@ class Game {
 	    return scenes
 	}
 
+
 	func validateCommand(text: String) -> Scene? {
 	    for command in self.current_scene!.commands {
 	        if command.text == text {
@@ -49,6 +57,7 @@ class Game {
 	    
 	    return nil
 	}
+
 
 	func getNextScene(name: String) -> Scene? {
 		for scene in self.scenes {

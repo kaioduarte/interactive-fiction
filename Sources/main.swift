@@ -57,6 +57,15 @@ router["start", .slashRequired] = { context in
 }
 
 
+router["Reiniciar"] = { context in
+	guard let from = context.message?.from else { return false }
+
+	game.restart()
+	
+	return UI(context: context, message: nil)
+}
+
+
 router.unmatched = { context in
 	guard let msg = context.message?.text else { return false }
 	
