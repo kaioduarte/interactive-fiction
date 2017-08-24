@@ -17,10 +17,6 @@ class Game {
 		self.current_scene = self.scenes[0]
 	}
 
-	func reset() {
-		self.current_scene = self.scenes[0]
-	}
-
 	func getScenes() -> [Scene] {
 	    var scenes: [Scene] = []
 	    
