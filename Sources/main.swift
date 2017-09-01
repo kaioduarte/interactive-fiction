@@ -22,53 +22,45 @@ func genButtons(scene: Scene) -> ReplyKeyboardMarkup {
 	}
 
 	markup.keyboard = [buttons]
-
 	return markup
 }
 
 
 func UI(context: Context, message: String?) -> Bool {
 	if message == nil {
-		context.respondAsync(game.current_scene!.description, 
+		context.respondSync(game.current_scene!.description, 
 			reply_markup: genButtons(scene: game.current_scene!))
-	
 		return true
 	}
 
 	game.current_scene = game.validateCommand(text: message!)
 
 	if game.current_scene == nil { 
-		context.respondAsync("Opção inválida, tente novamente!")
-	
+		context.respondSync("Opção inválida, tente novamente!")
 		return false;
 	}
 
-	context.respondAsync(game.current_scene!.description, 
+	context.respondSync(game.current_scene!.description, 
 		reply_markup: genButtons(scene: game.current_scene!))
-
     return true
 }
 
 
 router["start", .slashRequired] = { context in
 	guard let from = context.message?.from else { return false }
-	
 	return UI(context: context, message: nil)
 }
 
 
-router["Reiniciar"] = { context in
+router["Reiniciar", "Jogar novamente"] = { context in
 	guard let from = context.message?.from else { return false }
-
 	game.restart()
-	
 	return UI(context: context, message: nil)
 }
 
 
 router.unmatched = { context in
 	guard let msg = context.message?.text else { return false }
-	
 	return UI(context: context, message: msg)
 }
 

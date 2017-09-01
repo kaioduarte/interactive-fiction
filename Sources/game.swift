@@ -54,7 +54,6 @@ class Game {
 	            return getNextScene(name: command.key)
 	        }
 	    }
-	    
 	    return nil
 	}
 
@@ -65,7 +64,6 @@ class Game {
 				return scene
 			}
 		}
-
 		return nil
 	}
 }
