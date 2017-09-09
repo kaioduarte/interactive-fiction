@@ -1,0 +1,784 @@
+[
+	{
+		"name": "inicio",
+		"description": "Você está em casa jogando videogame há duas semanas, sem ver a luz do dia, mas o seu armário já está vazio e precisa sair para comprar comida. Você vê manchas vermelhas na parede, enquanto desce as escadas do seu prédio e pensa: \"Que tonto derramou tinta ali?\"
+
+A rua está estranhamente desolada, parece que algo não está certo, mas deve ser a dieta de batatas fritas e refrigerante. A mercearia fica na esquina do próximo quarteirão.
+
+Eis que você avista dois indivíduos no meio da rua, um agachado perto do outro, eles aparentam estar ensanguentados, mas você não tem certeza, pois a luz do dia incomoda seus olhos.",
+		"commands": [
+			{
+				"text": "Ajudá-los",
+				"key": "sala_02"
+			},
+			{
+				"text": "Ir por outro caminho",
+				"key": "cena_02"
+			}
+		]
+	},
+	{
+		"name": "sala_02",
+		"description": "TESTE PARA DAR PAU NO JSON",
+		"commands": [
+			{
+				"text": "Ajudá-los",
+				"key": "cena_01"
+			},
+			{
+				"text": "Ir por outro caminho",
+				"key": "cena_02"
+			},
+			{
+				"text": "Ajudá-los",
+				"key": "cena_01"
+			},
+			{
+				"text": "Ir por outro caminho",
+				"key": "cena_02"
+			}
+		]
+
+	},
+	{
+		"name": "cena_01",
+		"description": "Você corre em direção deles e pergunta o que aconteceu e se eles estão bem.
+	
+Um deles se vira com olhos verdes a boca cheia de sangue, ele começa a correr na sua direção, abandonando o homem caído no chão.
+
+Você pensa: \"Que diabos de drogas esse cara tá usando???\"",
+		"commands": [
+			{
+				"text": "Lutar contra eles",
+				"key": "game_over_01"
+			},
+			{
+				"text": "Fugir",
+				"key": "cena_03"
+			}
+		]
+	},
+	{
+		"name": "cena_02",
+		"description": "Você dá meia volta e vai por outro caminho, afinal você não quer se arriscar.
+
+Ao virar a esquina você se depara com outro monstro e ele lhe persegue.",
+		"commands": [
+			{
+				"text": "Lutar contra eles",
+				"key": "game_over_01"
+			},
+			{
+				"text": "Fugir",
+				"key": "cena_04"
+			}
+		]
+	},
+	{
+		"name": "cena_03",
+		"description": "Você está correndo desesperadamente e gritando socorro.
+
+Você se depara com três saídas: um beco, sua loja favorita de HQs e tem um carro estacionado ao seu lado.",
+		"commands": [
+			{
+				"text": "Correr para o beco",
+				"key": "cena_05"
+			},
+			{
+				"text": "Se esconder na loja de HQs",
+				"key": "cena_06"
+			},
+			{
+				"text": "Tentar se esconder no carro",
+				"key": "game_over_02"
+			}
+		]
+	},
+	{
+		"name": "cena_04",
+		"description": "Você foge correndo em pânico e pedindo socorro. Você se arrepende de ter abandonado a academia e já começa a ficar cansado. Mais adiante você encontra uma loja de HQs aberta.
+		
+O homem louco está se aproximando!!",
+		"commands": [
+			{
+				"text": "Se esconder na loja de HQs",
+				"key": "cena_06"
+			},
+			{
+				"text": "Voltar para sua casa e trancar a porta",
+				"key": "game_over_04"
+			}
+		]
+	},
+	{
+		"name": "cena_05",
+		"description": "Você correu para o beco, mas percebe que tem uma grade impedindo a passagem e os monstros estão se aproximando de você.
+
+No chão tem uma barra de ferro.",
+		"commands": [
+			{
+				"text": "Lutar com os monstros com a barra de ferro",
+				"key": "game_over_03"
+			},
+			{
+				"text": "Escalar a grade e fugir",
+				"key": "cena_07"
+			}
+		]
+	},
+	{
+		"name": "cena_06",
+		"description": "Você entra rápido e fecha a porta rapidamente. O homem louco se joga na porta de vidro, formando uma grande rachadura no vidro.",
+		"commands": [
+			{
+				"text": "Interditar a porta com uma estante",
+				"key": "cena_08"
+			},
+			{
+				"text": "Fugir pelos fundos",
+				"key": "cena_09"
+			}
+		]
+	},
+	{
+		"name": "cena_07",
+		"description": "Você sobe numa lixeira e segura no topo da grade. Você dá um impulso para subir e um dos monstros puxam seu pé, rasgando sua calça.
+
+Você o chuta e consegue pular. Os monstros parecem não ter destreza para pular a grade e continuar indo atrás de você. Eles puxam a grade furiosamente, mas eles ficaram pra trás.",
+		"commands": [
+			{
+				"text": "Fugir mais um pouco",
+				"key": "cena_09"
+			},
+			{
+				"text": "Trolar os monstros",
+				"key": "game_over_05"
+			},
+		]
+	},
+	{
+		"name": "cena_08",
+		"description": "Você empurra uma estante de livros pesada contra a porta, impedindo o zumbi de quebrá-la. Você pode ouví-lo furioso batendo na porta.",
+		"commands": [
+			{
+				"text": "Fugir pelos fundos",
+				"key": "cena_09"
+			},
+			{
+				"text": "Reforçar com mais estantes",
+				"key": "game_over_06"
+			}
+		]
+	},
+	{
+		"name": "cena_09",
+		"description": "Você conseguiu sair dessa e agora pode respirar um pouco. Ao começar a se acalmar, então você tenta pensar na situação em que se encontra.
+
+\"O que tá acontecendo? Fiquei em casa duas semanas e o mundo virou o inferno!\"
+
+Você começa a se perguntar sobre as pessoas que conhece - não há muitas opções, pois você é um pouco solitário -.",
+		"commands": [
+			{
+				"text": "Procurar seu melhor amigo Maicão",
+				"key": "cena_10"
+			},
+			{
+				"text": "Ir atrás da sua ex-namorada Larissa",
+				"key": "cena_11"
+			}
+		]
+	},
+	{
+		"name": "cena_10",
+		"description": "Você resolveu ir atrás de seu grande amigo, o Maicão. Você tenta ligar para ele, mas não há resposta.
+
+A casa do Maicão não fica tão longe para ir caminhando, porém todo cuidado é pouco com os caras estranhos de olhos verdes.
+
+Finalmente você chega no seu destino e ali mesmo se recorda dos momentos vividos na infância. Você ouve um barulho familiar e espia pela janela quebrada, era Maicão sendo espancado por um homem e uma mulher.
+
+\"Comida, remédios e armas!!\", grita a mulher dando um forte chute no Maicão. \"Cadê a comida, remédios e armas, otário??? Nos conte logo ou vamos te jogar para os Rotters para que vire um olhos verdes também.\"
+
+Rotters? Ela deve está falando daqueles malucos de olhos verdes...",
+		"commands": [
+			{
+				"text": "Entrar de fininho e surpreender o casal",
+				"key": "cena_21"
+			},
+			{
+				"text": "Entrar e pedir que eles parem de bater no seu amigo",
+				"key": "game_over_11"
+			}
+		]
+	},
+	{
+		"name": "cena_11",
+		"description": "Você resolve ir atrás da sua ex-namorada. Afinal de contas, você estava a duas semanas jogando devido ao término do namoro com ela. Preocupado com ela, você liga para ela. Vários pensamentos passam por sua cabeça. Após alguns segundos que parecia ser minutos, ela atendeu!
+
+👩🏻: \"Oi Augusto! Que surpresa! Tudo bem contigo?\"
+
+👱🏻: \"Oi Larissa! Um pouco cansado mas estou bem e você? A cidade está uma loucura e fiquei preocupado com você... Onde você está?\"
+
+👩🏻: \"Oh, que gracinha! Sei como está a cidade rsrsrs. Estou laboratório do Centro de Pesquisa de Medicina. Aqui está seguro rsrsrs. Sugiro que venha para cá, que lhe explico o que está acontecendo ☺️\"
+
+Você acha um pouco estranho de ela estar tão feliz apesar da situação da cidade. Você pensa se vai até lá.",
+		"commands": [
+			{
+				"text": "Ir até o centro de pesquisa para encontrá-la",
+				"key": "cena_12"
+			},
+			{
+				"text": "Fugir para a casa dos seus pais",
+				"key": "game_over_08"
+			}
+		]
+	},
+	{
+		"name": "cena_12",
+		"description": "Você foi correndo para o Centro de Pesquisa onde a Larissa está.
+
+O que te move é o amor por ela, mas na avenida que você pretende passar, há vários zumbis espalhados. Uns andando sem rumo e outros parados.",
+		"commands": [
+			{
+				"text": "Sair correndo no meio deles",
+				"key": "cena_13"
+			},
+			{
+				"text": "Ir por outra avenida",
+				"key": "cena_14"
+			}
+		]
+	},
+	{
+		"name": "cena_13",
+		"description": "O que o amor não é capaz? Você correu por 20 minutos sem parar! Nenhum zumbi te alcançava. Quando percebeu, estava já em frente à entrada do centro de pesquisa.
+
+Para entrar no centro de pesquisa, você precisa da autorização de um membro do centro. Portanto, deve conversar com o porteiro que irá confirmar a autorização e abrir o portão.",
+		"commands": [
+			{
+				"text": "Pular o portão",
+				"key": "cena_15"
+			},
+			{
+				"text": "Ir até a portaria",
+				"key": "cena_16"
+			}
+		]
+	},
+	{
+		"name": "cena_14",
+		"description": "Você tentou ir pela outra avenida. Esta avenida tinha bem menos zumbi.
+
+Você seguiu cautelosamente a avenida mas terminou deparando com um zumbi que saiu da loja que passava em frente. Você deu um grito! Os zumbi em volta olharam para você mas nenhum deles veio te atacar. Você relou em um deles e nada. Cortou um deles e nada. Realmente, parece que eles não vão te atacar mais.",
+		"commands": [
+			{
+				"text": "Ir até o centro de pesquisa saltitando",
+				"key": "cena_19"
+			},
+			{
+				"text": "Sair matando os zumbis",
+				"key": "game_over_09"
+			}
+		]
+	},
+	{
+		"name": "cena_15",
+		"description": "Você subiu no portão e pulou. Mas como você estava cansado após correr muito, você pulou de mal jeito e torceu o pé no chão. Agora você não pode correr mas não se preocupou muito pois como a Larissa havia dito, aqui é um lugar seguro.",
+		"commands": [
+			{
+				"text": "Ir direto para a Larissa",
+				"key": "cena_17"
+			},
+			{
+				"text": "Passear um pouco pelo centro de pesquisa",
+				"key": "cena_18"
+			}
+		]
+	},
+	{
+		"name": "cena_16",
+		"description": "Você foi até a portaria e viu que o porteiro é um zumbi! 
+
+Ele olhou para você e abriu o portão. Você achou isso muito estranho. Resolveu conversar com o porteiro mas ele não respondeu.
+
+Você entrou no centro de pesquisa. Em vez de ir direto, você passeia pelo centro e se deparou com enfermeiras zumbis que estavam limpando o chão e lhe ignoraram. 
+
+Nesse momento você compreendeu que os zumbis não estão te atacando pois estão te considerando como aliado.
+
+Você respira fundo e vai para o laboratório onde sua ex está",
+		"commands": [{"text": "Continuar", "key": "cena_20"}]
+	},
+	{
+		"name": "cena_17",
+		"description": "Chegando no Laboratório, Larissa se surpreende com sua chegada rápida.
+
+Você caminha em direção a Larissa e se assusta! Ela é uma zumbi!
+
+👩🏻:\"Eu disseminei as bactérias por toda cidade. Como sou a rainha, consigo controlar e mandar nos zumbis. Acho que você não percebeu mas, depois que você me ligou, eu ordenei a eles para que não atacassem você.\"
+
+👱🏻:\"As pessoas que viraram zumbis têm como voltar ao normal?\"
+
+Larissa se aproxima de você acenando negativamente com a cabeça.
+
+👱🏻:\"Eu tenho que virar um zumbi consciente igual você ou eu posso continuar desse jeito?\"
+
+👩🏻:\"Se você quiser ficar comigo do jeito que você está, tenho que criar a vacina primeiro, aplicar em você então poderemos ficar.
+Outra possibilidade é eu te deixar como zumbi consciente e vivermos juntos para sempre. E ai? O que deseja?\"",
+		"commands": [
+			{
+				"text": "Virar um zumbi e viver com ela",
+				"key": "fim_01"
+			},
+			{
+				"text": "Esperar a vacina e viver com ela",
+				"key": "fim_02"
+			},
+{
+				"text": "Matar a Larissa agora",
+				"key": "game_over_07"
+			},
+{
+				"text": "Esperar a vacina e depois matá-la",
+				"key": "fim_03"
+			}
+		]
+	},
+	{
+		"name": "cena_18",
+		"description": "Você tentou passear pelo centro de pesquisa mas como seu pé doía muito, você resolveu ir direto à sua ex namorada.
+
+Chegando no Laboratório, Larissa se surpreende com sua chegada rápida.
+
+Você caminha em direção a Larissa e se assusta! Ela é uma zumbi!
+
+👩🏻:\"Eu disseminei as bactérias por toda cidade. Como sou a rainha, consigo controlar e mandar nos zumbis. Acho que você não percebeu mas, depois que você me ligou, eu ordenei a eles para que não atacassem você.\"
+
+👱🏻:\"As pessoas que viraram zumbis têm como voltar ao normal?\"
+
+Larissa se aproxima de você acenando negativamente com a cabeça.
+
+👱🏻:\"Eu tenho que virar um zumbi consciente igual você ou eu posso continuar desse jeito?\"
+
+👩🏻:\"Se você quiser ficar comigo do jeito que você está, tenho que criar a vacina primeiro, aplicar em você então poderemos ficar.
+Outra possibilidade é eu te deixar como zumbi consciente e vivermos juntos para sempre. E ai? O que deseja?\"",
+		"commands": [
+			{
+				"text": "Virar um zumbi e viver com ela",
+				"key": "fim_01"
+			},
+			{
+				"text": "Esperar a vacina e viver com ela",
+				"key": "fim_02"
+			},
+			{
+				"text": "Matar a Larissa agora",
+				"key": "game_over_07"
+			},
+			{
+				"text": "Esperar a vacina e depois matá-la",
+				"key": "fim_03"
+			}
+		]
+	},
+	{
+		"name": "cena_19",
+		"description": "Você chegou no centro de pesquisa, para entrar precisa falar com o porteiro. Você foi até a portaria e viu que o porteiro era um zumbi! Ele olhou para você e abriu o portão.
+
+Nesse momento, você compreendeu que todos os zumbis estavam te tratando como aliado. Você respirou fundo e foi direto à sua ex namorada.",
+		"commands": [{"text": "Continuar", "key": "cena_20"}]
+	},
+	{
+		"name": "cena_20",
+		"description": "Finalmente você chegou ao laboratório onde Larissa trabalha. O ambiente estava meio escuro.
+
+👩🏻: \"Oi Augusto! Estou aqui!\"
+
+Você caminha na direção dela. Chega bem perto, coloca a mão no rosto dela e diz:
+
+👱🏻: \"É o que eu pressenti. Você consegue controlar os zumbis, porque é a rainha deles?\"
+
+👩🏻: \"Hehehe, você é inteligente mesmo. Conseguiu perceber com poucas pistas.\"
+
+👱🏻: \"Já fez a vacina para essa bactéria?\"
+
+👩🏻: \"Ainda não. Acabei de criar a bactéria e não tive tempo ainda... Mas podemos fazer juntos se você quiser.\"
+
+👱🏻: \"...\"
+
+👩🏻: \"Eu terminei com você porque queria focar nesta pesquisa que pode mudar o mundo! Agora que consegui, quero voltar com você. Posso fazer a vacina rapidinho, se você não quiser se contaminar. Ou vira um zumbi consciente como eu. Você que escolhe.\"
+",
+		"commands": [
+			{
+				"text": "Virar um zumbi e viver com ela",
+				"key": "fim_01"
+			},
+			{
+				"text": "Esperar a vacina e viver com ela",
+				"key": "fim_02"
+			},
+			{
+				"text": "Mudar o mundo junto com a Larissa",
+				"key": "fim_04"
+			},
+			{
+				"text": "Esperar a vacina e depois matá-la",
+				"key": "fim_03"
+			}
+		]
+	},
+	{
+		"name": "cena_21",
+		"description": "Você vai para os fundos da casa e escala para uma janela aberta, você procura por uma arma. Você encontra grandes chaves de ferramentas e segue para salvar Maicão.
+
+Você vê o casal insano conversando enquanto estão de pé perto do Maicão. Num movimento rápido, você acerta a cabeça do homem com uma chave inglesa.
+
+Ele cai no chão e a mulher se vira para você com uma faca na mão. Você evita o ataque dela com uma outra chave acertando a mão dela. Ela ajoelha no chão gemendo de dor e implora chorando para que não a machuque.",
+		"commands": [
+			{
+				"text": "Deixá-la e salvar o Maicão",
+				"key": "cena_22"
+			},
+			{
+				"text": "Matar a mulher e o homem adormecido",
+				"key": "game_over_12"
+			}
+		]
+	},
+	{
+		"name": "cena_22",
+		"description": "Não faz sentido chutar a mulher que está parada e deixar seu amigo morrer. Ela corre para fora da casa.
+
+Você se agacha perto do Maicão, mas era tarde demais. Então você vira o corpo e sente um alívio: não era o Maicão, só um cara com cabelo parecido, que devia estar se escondendo na casa dele diante do acontecido na cidade.
+
+Você então vai procurar o Maicão dentro da casa. Você supõe que ele esteja escondido, então procura dentro do quarto dele e o encontra amarrado dentro do guarda-roupa. Você resgata-o.
+
+👱🏾: \"Augusto do céu! Muito obrigado mano! Se não fosse você, eu ia morrer de fome aqui.\"
+
+Vocês comemoram rapidamente o encontro, trocam as informações e decidem o que fazer agora.",
+		"commands": [
+			{
+				"text": "Fugir com o Marcão para longe",
+				"key": "fim_05"
+			},
+			{
+				"text": "Tentar sobreviver na cidade",
+				"key": "cena_23"
+			}
+		]
+	},
+	{
+		"name": "cena_23",
+		"description": "Você e Maicão resolvem sobreviver na cidade, pois não há garantia que fora da cidade esteja tudo bem.
+
+Primeiro vocês se muniram de suprimentos, juntaram colegas de confiança e publicaram na internet a situação da cidade para alertar e pedir ajuda.
+
+Através das informações, vocês concluíram que o foco é apenas esta cidade. Mas aonde? Então você se lembra dos games e supõe que está no centro de pesquisa. Outra coisa que você lembra, é que sua ex namorada trabalha lá e ela poderia te dar informações, se estiver viva...",
+"commands": [
+			{
+				"text": "Ligar para a ex namorada",
+				"key": "cena_24"
+			},
+			{
+				"text": "Ir direto para o centro de pesquisa",
+				"key": "cena_25"
+			}
+		]
+	},
+	{
+		"name": "cena_24",
+		"description": "Você liga para sua ex namorada e ela atende. Você se sente um pouco aliviado. Mas logo sua pressão cairá.
+
+Ela fala que sabe o que você está fazendo na cidade, pois ela consegue receber algumas informações pelos zumbis. Não chega a ser muito mas é o suficiente para saber de suas ações entretanto ela não conhece seus objetivos. Ela explica também que toda a causa está na bactéria que ela produziu. Ela pode controlar os zumbis pois ela é a rainha deles sendo uma zumbi consciente.
+
+Você pergunta se há como ela parar essa catástrofe. Ela diz que sim, mas com uma condição. Você voltar com ela.",
+"commands": [
+			{
+				"text": "Voltar com sua namorada",
+				"key": "fim_06"
+			},
+			{
+				"text": "Fingir que vai voltar",
+				"key": "game_over_13"
+			}
+		]
+	},
+	{
+		"name": "cena_25",
+		"description": "Você não quis ligar para sua namorada. Então, vocês foram armados para o centro de pesquisa e pularam o muro do estacionamento. Seguiram cuidadosamente para o laboratório para encontrar sua ex namorada.
+
+Lá estava ela. Você vai sozinho. Ela fica surpreendida e te trata bem. O que não estava bem era sua sensação. Pois sua ex tinha virado um zumbi, mas consciente.
+
+Ela explica o que fez e seus parceiros escutam a conversa que por uma rádio... Eles querem matá-la... Fazê-la pagar pelo o que fez... Mas ainda é preciso que ela faça a vacina para evitar que a catástrofe se espalhe.",
+"commands": [
+			{
+				"text": "Pedir para que ela faça a vacina",
+				"key": "cena_26"
+			},
+			{
+				"text": "Matá-la",
+				"key": "game_over_10"
+			}
+		]
+	},
+	{
+		"name": "cena_26",
+		"description": "Você pede para que ela produza a vacina e que evite que a catástrofe se agrave. Seus parceiros ficam meio insatisfeito mas você consegue convencê-los.
+
+Após 1 mês, sua ex namorada consegue fazer a vacina em grande escala. Os zumbis são dizimados e só sobra sua ex namorada. Seus parceiros querem a morte dela.",
+"commands": [
+			{
+				"text": "Fugir com a sua ex namorada para longe",
+				"key": "fim_07"
+			},
+			{
+				"text": "Matar a sua ex namorada",
+				"key": "fim_08"
+			}
+		]
+	},
+	{
+		"name": "fim_01",
+		"description": "Você decidiu virar zumbi consciente igual a Larissa e viver com ela. Apesar de todo o mal estar que ela te causou, você escolheu ficar com ela.
+
+Meses depois, o mundo inteiro estava repleto de zumbis. Havia somente duas “pessoas”. Você e a Larissa. Isso é ruim? Talvez não, pois seus filhos serão conscientes.
+
+FIM 1 - Adão e Eva",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_02",
+		"description": "Você decidiu ficar com a Larissa mas sem se tornar um zumbi. Também pediu à Larissa que controlasse os zumbis para que a catástrofe não se espalhe. 
+
+Assim, você salvou o mundo. Mas não pode ter uma vida normal com a Larissa. Se aplicar a vacina nela, ela morre.
+
+
+Passando-se alguns anos, Larissa se suicidou aplicando a vacina que criou. Logo você encontra uma carta dela para você.
+
+👩🏻💭: \"Não quero que se sinta culpado pelo que eu fiz. Simplesmente não consigo aguentar mais essa vida de não poder te amar completamente. Também não quero continuar sendo uma corrente que te impeça você de ser mais feliz. Quero que saiba que agradeço muito por ter escolhido ficar comigo apesar de tudo o que fiz e como eu me tornei. Muito obrigado e te amo. Larissa\"
+
+
+FIM 2 - Karma",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_03",
+		"description": "Você decidiu matar a Larissa. Mas não agora. Pois precisa de vacinas para que possa evitar futuras catástrofes desta bactéria.
+
+Você enganou bem a Larissa. Disse que a ama e vai ficar com ela. Vai virar zumbi após ela fazer a vacina. Também pediu para que controlasse os zumbis, impedindo a disseminação do caos.
+
+Meses depois, Larissa fez as vacinas. Como você a ajudou, você também sabe como fazer a vacina. Toda feliz, Larissa disse que quer você a beije finalmente. Você pede para ela fechar os olhos, agarra a cabeça dela e beija... aplicando a vacina no pescoço dela!
+
+👩🏻: \"O que você tá fazendo??? Eu vou morrer!\"
+
+👱🏻: \"Por isso mesmo! Sinto muito, mas você tem que morrer para pagar pelo o que você fez.\"
+
+👩🏻: \"Ah, mas você me beijou, então vai virar um monstro igual eu!\"
+
+👱🏻: \"Já havia aplicado em mim a vacina. Isso não ocorrerá!\"
+
+👩🏻: \"Maldiiiitoo!!!!\"
+
+Larissa caiu dura. Você salvou o mundo e realizou seu objetivo. Sentiu-se um pouco culpado pelo que fez, mas logo passou depois de 1 semana de jogo.
+
+FIM 3 - Easy Game",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_04",
+		"description": "Você decidiu mudar o mundo com a Larissa. Para melhor, no seu ponto de vista. A bactéria foi aprimorada para controlar as pessoas e aumentar a capacidade geral do corpo humano. Funciona como um nanomachine.
+
+A nova bactéria se espalhou rapidamente pelo mundo, pois é possível transmitir de várias maneiras sem apresentar sintomas negativos.
+
+Agora, é possível controlar toda a humanidade, dar ordens ou até que Larissa mude. Você ordenou sempre amar o próximo e propagar o bem.
+
+Anos depois, a humanidade estava vivendo a paz mundial e uma nova era, onde a ciência havia avançado mais de 700 anos, pois todo mundo colaborava para o avanço da ciência do jeito que podia.
+
+FIM 4 - Hello New World!",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_05",
+		"description": "Você e Maicão resolvem fugir da cidade, então fizeram as malas, se armaram e fugiram. 
+
+Os pais de Maicão estavam de viagem e por isso não sofreram os ataques. Vocês combinaram com eles de se encontrarem na casa dos seus pais que fica bem longe.
+
+Antes, vocês passaram pela polícia militar que estava no caminho e mostraram o que está acontecendo por um vídeo que gravou no smartphone. A polícia logo agiu após verificar a veracidade do fato.
+
+Meses depois, no noticiário foi anunciado que a catástrofe tinha sido resolvida e que a polícia suspeita que tudo começou na cidade que você morava.
+
+FIM 5 - Resolvido?",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_06",
+		"description": "Você resolve voltar com ela. Essa seria a única opção para salvar seus amigos, parceiros, conhecidos e talvez o mundo. Você diz para seus parceiros que vai até o centro de pesquisa sozinho e que não haveria perigo pois sua namorada disse que lá está seguro.
+
+No mesmo dia, os zumbis são controlados para ficar em um único lugar e são eliminados. Sua namorada começa a fazer a produção da vacina e você a ajuda.
+
+Meses depois, a cidade já havia recuperado um pouco e a vacina estava pronta. Você distribui a vacina para a sociedade e tem sua missão cumprida. Agora é só viver para sempre com a sua namorada...
+
+FIM 6 - Amor Distorcido",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_07",
+		"description": "Você resolve fugir com sua namorada para longe. Pois só assim para que os outros não a matem. Seu amigo Maicão entendeu sua decisão e te ajudou na fuga.
+
+1 ano depois, você conseguiu uma vida estável. Tinha as dificuldades por ela ser uma zumbi mas isso não importava para você. O importante era estar junto com ela. Ambos trabalhavam em casa. As compras você fazia. Quando era possível, de noite, vocês saiam para passear.
+
+Vocês conseguirão retribuir para a sociedade, graças a sua namorada, de uma forma única num futuro distante... 
+
+FIM 7 - Amor Imutável",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "fim_08",
+		"description": "Você resolveu matar a sua ex namorada. Ela tinha que pagar pelo que fez e pela felicidade dela e dos outros, pois uma pessoa totalmente diferente não viveria nessa sociedade e poderia causar mais catástrofes mesmo não tendo essa intenção.
+
+Como responsabilidade de ser ex namorado e como forma de piedade, você mesmo resolveu matá-la, aplicando a vacina nela. Ela sofreu, mas durante o efeito da vacina ela não reagia nem soltou palavras de ofensa e ódio. Parecia ter aceitado seu erro... Esse ato dela, te determinou a ser uma pessoa mais altruísta...
+
+FIM 8 - Determinação",
+		"commands": [{"text": "Jogar novamente", "key": ""}]
+	},
+	{
+		"name": "game_over_01",
+		"description": "Você pega uma garrafa no chão e a quebra, ameaçando os psicopatas.
+
+👱🏻: \"Estou avisando você! Não dê mais um passo!\" Você grita.
+
+O homem enlouquecido pula em cima de você e você o perfura com a garrafa. O homem está atordoado por um momento, mas ainda insistente, e pula no seu pescoço rasgando-o.
+
+Você sente o calor do seu sangue contrastando com a frieza da morte.
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_02",
+		"description": "Você tenta entrar no carro, mas a porta está trancada. Você tenta a outra porta, mas ela também está trancada!!! A cada segundo os monstros se aproximam de você.
+
+Você pega uma pedra e quebra o vidro, mas já é tarde. Os monstros lhe alcançam e te jogam sobre os restos de vidro do carro, cortando uma veia importante.
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_03",
+		"description": "Você pegou a barra de ferro que estava no chão e parte para os monstros. Bate em um e mais um. Eles chegam a cair no chão mas logo levantam. Você percebe que essa decisão só te fez cansar mais. Até que você vê que tava cercado por zumbis. Não há mais o que fazer... Você grita e tenta fugir mas leva uma mordida no braço e a partir de então, os zumbis montam em cima de você...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_04",
+		"description": "Você corre em direção à sua casa. Pega a chave que está no bolso. Sobe as escadas desesperado e tropeça. Nisso, a chave cai no chão e você tenta pega-la. 
+
+Quando conseguiu pegar, o homem enlouquecido já estava na sua frente...
+
+O homem puxa seu braço e morde sua jugular. Mal deu para sentir a dor da mordida e você apaga de tanto medo.
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_05",
+		"description": "Você pega uma garrafa no chão e a quebra, ameaçando os psicopatas.
+
+👱🏻: \"Hahahahahahah! Vocês não me pegam!\" Você grita.
+
+Terminando de trolar os monstros, você se vira e vê que tem um monstro vindo para sua direção devagar. Mal deu tempo de você se arrepender, começou a chegar outro, mais outro e mais monstros... Os monstros que você trolou, de tanto forçar a grade, quebram ela.
+
+Você sente a morte acariciar seu rosto...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_06",
+		"description": "Você tenta colocar mais estantes para impedir que o zumbi entre. Quando estava perto de colocar a segunda estante, o zumbi consegue quebrar a porta de vidro e derrubar a primeira estante.
+
+Você tenta fugir pelos fundos desesperadamente mas escorrega ao pisar em um gibi. Nesse tempo, o zumbi pula na sua direção. Os ossos do seu tórax quebram devido o pulo do zumbi. Não há mais força para sair dessa situação...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_07",
+		"description": "Você decidiu matar a Larissa. Todo o comportamento, pensamento e aparência dela lhe causavam horror. Você ficou com muito medo dela!
+
+Você tentou enganar Larissa dando uma resposta segura, mas ela percebeu seu medo.
+
+👩🏻: \"Pensei que gostava de mim mesmo do jeito que estou agora... Nem imaginei que você iria me rejeitar... Acho que não vai dá certo a gente voltar como antes... Já que não vai dar certo mesmo... Vou te transformar em meu escravo...\"
+
+Larissa anda devagar para sua direção. Você tenta fugir mas não consegue correr com o pé machucado. Larissa chega em você e te beija enforcando. O medo, nojo e o desespero tomam conta, mas aos poucos vai se convertendo em prazer e após alguns segundos, você para de raciocinar por completo...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_08",
+		"description": "Você disse ok, mas não foi até ela. Voltou para sua casa, arrumou as malas, pegou um carro que estava largado na rua devido ao pânico e dirigiu-se para a casa dos seus pais.
+
+Durante o caminho, você passa pela cidade vizinha e depara com um monte de zumbis que estavam fazendo uma barreira evitando que os veículos passem. Você tenta ir por outro caminho mas vê que está cercado por vários zumbis...
+
+Você acelera o carro e tenta passar por cima deles para fugir, apesar do impacto, você não consegue furar a barreira dos zumbis. Sem carro e machucado, não há mais o que fazer...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_09",
+		"description": "Você saiu matando os zumbis que via pela frente, com facadas, pauladas, tiros, etc.
+
+Você começou a sentir prazer em matar zumbis. Esqueceu até de ir até sua namorada. Quando lembrou, já era de madrugada. Você tomou rumo ao centro de pesquisa.
+
+Chegando lá, haviam vários zumbis. Você sorriu e partiu para cima. Só que desta vez, eles reagiram. Cada um mordeu um pedaço seu e você mal pode sentir dor e medo...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_10",
+		"description":"Você resolveu matar a sua ex namorada. Através do seu comando, todos entraram, posicionaram-se e começaram a atirar nela. Ela reagiu. Como ela é uma zumbi superior, apesar do poder de fogo seu ser mais alto, ela conseguiu matar metade de seus parceiros.
+
+Parecia que tudo se havia resolvido e ninguém apresentou sintomas na hora. Mas depois de 3 dias, aqueles que foram machucados por ela, viraram zumbis inconscientes mais fortes. Você, pelo contrário, não estava machucado mas foi morto pelos seus parceiros que viraram zumbis.
+
+Graças a esses zumbis mais fortes, a disseminação da bactéria foi acelerada e conseguiu dizimar a humanidade.
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_11",
+		"description": "Você entra no meio do casal e cobre Maicão com seu corpo de forma a protegê-lo e implora para que parem. O casal ri de você e começa a te espancar. Você fica com o corpo todo quebrado. Quando percebe, na sua frente só havia Maicão morto. Dentro do desespero, você começa ficar com sono e dorme para sempre.
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_12",
+		"description": "Você resolve matar a mulher. Afinal ela espancou seu melhor amigo indefeso. \"Ela merece\", você pensa.
+
+Para garantir a morte dela junto com o desespero, você e finge deixar ela ir. Estende a mão à ela, ajuda a levantar. Chega bem perto dela e finca a chave de fenda no ouvido dela. Ela grita de dor. Você observa o desespero dela até morrer.
+
+O homem que estava adormecido, acorda com o grito dela. Ele no desespero, sai correndo. Você tenta correr atrás dele mas logo deixa, pois pelo grito do homem, começa a vir os zumbis. 
+
+Eles matam o homem e começam a cercar a casa de Maicão. Pelo jeito não há mais escapatória... Você tenta fugir, mas não teve sucesso...
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	},
+	{
+		"name": "game_over_13",
+		"description": "Você finge que vai voltar com ela. Ela fica muito feliz. Você vai até o centro de pesquisa para encontrar com ela.
+
+No mesmo dia, os zumbis são controlados para ficar em um único lugar e são eliminados. Sua namorada começa a fazer a produção da vacina e você a ajuda.
+
+Meses depois, a cidade já havia recuperado um pouco e a vacina estava pronta. Você distribui a vacina para a sociedade e tem sua missão cumprida. Agora é só se livrar da sua ex namorada. 
+No laboratório, você percebe que seus olhos estão ficando verdes e com muita vontade de beber sangue! Você na sua consciência vaga, conclui que virou um zumbi. Sua última visão era a sua namorada sorrindo para você...
+
+👩🏻: \"Pensou que... engan... rsrsrs... Já que não... meu... vire um... sempre!\"
+
+GAME OVER",
+		"commands": [{"text": "Reiniciar", "key": ""}]
+	}
+]

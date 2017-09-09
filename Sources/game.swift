@@ -11,7 +11,7 @@ class Game {
 
 
 	init(){
-		self.file = FileHandle(forReadingAtPath: "/home/kds/bot/Sources/scene.json")
+		self.file = FileHandle(forReadingAtPath: "/home/kds/bot/Sources/scenefinal.json")
 		self.data = self.file!.readDataToEndOfFile()
 		self.json = JSON(data: data)
 		self.scenes = getScenes()
